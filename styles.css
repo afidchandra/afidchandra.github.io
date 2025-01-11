@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#canvas {
+    display: block;
+}
+
+#lightning-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    animation: lightning 1s infinite;
+}
+
+@keyframes lightning {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #fff, 
+            0 0 10px #fff, 
+            0 0 20px #fff, 
+            0 0 30px #fff, 
+            0 0 40px #fff, 
+            0 0 50px #fff, 
+            0 0 60px #fff, 
+            0 0 70px #fff;
+    }
+    50% {
+        text-shadow: none;
+    }
+}
